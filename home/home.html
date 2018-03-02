@@ -1,0 +1,111 @@
+<!--Principal-->
+<section class="resume-section p-1 p-lg-5 d-flex d-column fundo" id="about">
+  <div class="my-auto">
+    <h2 class="mb-0">escola especial para surdos</h2>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 portfolio-item">
+        <div class=" h-100">
+          <div class="card-body">
+            <h1 class="mb-2">
+              <span class="text-primary">Frei pacífico</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10">
+        <div class=" h-100">
+          <a href="#"><img class="img-fluid img-profile rounded-circle mx-auto mb-2 sombra" src="img/logo.jpg" style="height:85%;" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+      <div class="user" >
+          <div class="espaco">
+              <img src="img/sair.png" alt="" style="width:50px;">
+              <span class="text_botao">Sair</span>
+          </div>
+          <div class="espaco nome">Olá Viviani Andrade</div>
+          <div class="espaco">
+                  <span class="d-none d-lg-block">
+                    <img class="rounded-circle profile" src="img/profile.jpg" alt="">
+                  </span>
+                
+          </div>
+      </div>
+      <br>
+      <div class="tela" >
+          <section class=" p-0 p-lg-3 d-flex flex-column">
+            <div class="container">
+              <h1 class="text-center">Personagens Bleach</h1>
+              <div class="row">
+                  <div ng-repeat="personagem in data" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <div class="card">
+                          <img class="card-img-top" ng-src="{{ personagem.imagemUrl }}" alt="personagem">
+                          <div class="card-body">
+                              <button data-container="body" data-toggle="popover" data-placement="bottom" data-content="{{ personagem.nome }}"
+                               class="btn btn-primary btn-lg btn-block" type="button">Nome do Personagem</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            </section>
+      </div>
+      
+      
+      <div class="botoes" >
+          <div class="resume-date text-md-center">             
+              
+             <span class="text_botao espaco">Próximo</span>
+             <a href="#!/textoJogo" id="a-popover"><i class="fa fa-arrow-circle-right" style="font-size:30px;color:#0C3DF0;"></i></a>
+            </div>
+                       
+      </div>
+  </div>
+</section>
+ <!-- ativando popover  -->
+ <script>
+  $(function () {
+      $('[data-toggle="popover"]').popover();
+  });
+  $(function () {
+      $('.example-popover').popover({
+      container: 'body'
+      })
+  });
+</script>
+<script>
+
+$(document).ready(function(){
+var divPai = $('.Linha');
+var btnCriar = $('#criarLinha');
+ 
+btnCriar.click(function(){
+  for(i=0;i<10;i++){
+    divPai.append("<div class='textoBox' style='display:table-cell;width:99%'>div texto</div>");
+  }
+   
+});
+
+ 
+});
+(function(){
+  var divPai = $('.Linha');
+  for(i=0;i<10;i++){
+    divPai.append("<div class='textoBox' style='display:table-cell;width:99%'>div texto</div>");
+  }
+  
+}());
+
+
+
+
+</script>
+
+
+
+
+
+
+

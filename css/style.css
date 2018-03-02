@@ -1,0 +1,164 @@
+.fundo{
+  background: url("../img/fundo_geral.jpg") no-repeat;
+  background-size: cover;
+}
+
+.displayed{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius:10px;
+    transition: all 1s;
+    background-size:contain;
+    backface-visibility: hidden;
+  }
+  
+  .back{
+    background: url("../img/verso_2.jpg");
+    background-size:cover;
+  }
+  
+  .back.flipped{
+    transform: rotateY(180deg);
+  }
+  
+  .front{
+    transform: rotateY(-180deg);
+    background-size:contain;
+  }
+  
+  .front.flipped{
+    transform: rotateY(0deg);
+    background-size:contain;
+  }
+  .card_m:hover{
+    box-shadow: 0 0 20px #383737;
+  }
+  
+  .face.flipped.match{
+    box-shadow: 0 0 30px orange;
+    background-size:contain;
+  }
+  .card_m{
+    width: 140px;
+    height: 200px;
+    position: absolute;
+    border-radius:10px;
+    perspective: 300px;
+    border: 1px solid gray;
+    background-size:contain;
+    
+  }
+  
+  #container_m{
+     position: relative;
+     margin: 0px auto;
+     border-radius: 10px;
+  }
+  
+  .btn-custom {
+      padding: 1px 15px 3px 2px;
+      border-radius: 50px;
+  }
+  
+  .btn-icon {
+      padding: 8px;
+      background: #ffffff;
+  }
+  .container_geral{
+     /* border: 2px solid black;*/
+      height: 550px;
+  }
+  .btn-warning{
+      background-color: rgb(189,93,56);
+      color: white;
+      font-weight: bold;
+  }
+  .btn-warning:hover{
+    background-color: rgb(202,125,96);
+    color: white;
+    font-weight: bold;
+  }
+
+.card{  
+  -webkit-box-shadow: 6px 6px 10px rgb(255,226,130); 
+  -moz-box-shadow: 6px 6px 10px rgb(255,226,130);
+  box-shadow: 6px 6px 10px rgb(255,226,130);
+}
+.avatar{
+  width: 30%;
+}
+.centro{
+  vertical-align: middle;
+}
+body{
+  padding-left:0px;
+  padding-top: 0px;
+}
+
+.tela{
+  border: 8px solid orange;
+  width: 890px;
+  height: 550px;
+  border-radius: 10px;
+  background:url("../img/fundo-verde-claro.gif") no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  padding-left:10px;
+}
+.user{
+  border: 0px solid gray;
+  width: 890px;
+  height: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+  
+}
+.botoes{
+  border: 0px solid gray;
+  width: 890px;
+  height: 60px;
+  padding-top: 10px;
+}
+h2{
+  padding-top: 0px; 
+}
+.sombra{
+  box-shadow: 0 0 5px 5px white;
+  background-image: url("../img/logo_frei_pacifico.png");
+}
+.text_botao{
+  font-weight: bold;
+  color: orangered;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 30px;
+}
+.profile{
+  height: 50px;
+  box-shadow: 0 0 5px 5px green;
+}
+.espaco{
+  padding-left: 20px;
+  text-align: center;
+}
+.nome{
+  padding-top: 15px;
+  text-shadow: 1px 0px 0px #FFF, 
+  -1px 0px 0px #FFF, 
+  0px 1px 0px #FFF, 
+  0px -1px 0px #FFF;
+font-size: 100%;
+font-weight: bold;
+color: #BD5D38;
+}
+
+.dimen{
+  background-size: cover;
+}
